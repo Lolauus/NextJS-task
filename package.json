@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "@apollo/client": "^3.10.4",
-    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-env": "^7.24.6",
+    "@babel/preset-react": "^7.24.6",
+    "@testing-library/react": "^15.0.7",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",

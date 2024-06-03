@@ -1,5 +1,6 @@
+import React from "react";
 import { render, screen } from "@testing-library/react";
-import RenderJoke from "@/api/RenderJoke";
+import RenderJoke from "./api/RenderJoke";
 
 describe("should test the div category", () => {
   it("should not render one-liner", () => {
@@ -14,8 +15,8 @@ describe("should test the div category", () => {
   });
 });
 
-describe("Adding two numbers together", () => {
-  it("should produce their sum", () => {
-    expect(1 + 1).toBe(2);
-  });
-});
+// describe("Adding two numbers together", () => {
+//   it("should produce their sum", () => {
+//     expect(1 + 1).toBe(2);
+//   });
+// });
