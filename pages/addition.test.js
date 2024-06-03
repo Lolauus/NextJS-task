@@ -1,13 +1,18 @@
-// import { render, screen } from "@testing-library/react";
-// import RenderJoke from "@/api/RenderJoke";
+import { render, screen } from "@testing-library/react";
+import RenderJoke from "@/api/RenderJoke";
 
-// test("Renderjoke, render a div", () => {
-//   render(<RenderJoke />);
+describe("should test the div category", () => {
+  it("should not render one-liner", () => {
+    render(<RenderJoke />);
 
-//   screen.getByRole("div", {
-//     name: "Category:",
-//   });
-// });
+    const container = screen.getByRole("generic", { name: /twopart-label/i });
+    const oneliner = within(container).queryAllByRole("generic", {
+      name: /oneliner/i,
+    });
+
+    expect(oneliner.length).toBe(0);
+  });
+});
 
 describe("Adding two numbers together", () => {
   it("should produce their sum", () => {
